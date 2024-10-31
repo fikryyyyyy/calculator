@@ -1,0 +1,139 @@
+/* Gaya untuk body dan calculator */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #222;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px #000;
+}
+
+/* Gaya untuk layar kalkulator */
+.display {
+  background-color: #444;
+  color: white;
+  font-size: 2em;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Gaya tombol */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.button {
+  color: white;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Warna tombol berdasarkan fungsinya */
+.button.red {
+  /* Tombol AC */
+  background-color: #e74c3c;
+}
+
+.button.gray {
+  /* Tombol fungsi seperti +/-, %, dll. */
+  background-color: #95a5a6;
+}
+
+.button.orange {
+  /* Tombol operator (+, -, ×, ÷) */
+  background-color: #f39c12;
+}
+
+.button.blue {
+  /* Tombol angka */
+  background-color: #3498db;
+}
+
+.button.green {
+  /* Tombol = */
+  background-color: #2ecc71;
+}
+
+/* Hover effects untuk tombol */
+.button:hover {
+  background-color: #666;
+}
+
+.button.red:hover {
+  background-color: #c0392b;
+}
+
+.button.orange:hover {
+  background-color: #e67e22;
+}
+
+.button.gray:hover {
+  background-color: #7f8c8d;
+}
+
+.button.blue:hover {
+  background-color: #2980b9;
+}
+
+.button.green:hover {
+  background-color: #27ae60;
+}
+
+/* Tema terang */
+body.light {
+  background-color: #fff;
+  color: #000;
+}
+
+.calculator.light {
+  background-color: #f5f5f5;
+}
+
+.display.light {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.light-theme .button {
+  background-color: #eee;
+  color: #333;
+}
+
+.light-theme .button.red {
+  background-color: #e57373;
+}
+
+.light-theme .button.orange {
+  background-color: #ffb74d;
+}
+
+.light-theme .button.blue {
+  background-color: #3600f8;
+}
+
+.light-theme .button.green {
+  background-color: #3600f8;
+}
+
+.light-theme .button.gray {
+  background-color: #cfd8dc;
+}
